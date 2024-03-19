@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="./components/Header.js" type="text/javascript" defer></script>
+    <script src="./components/Footer.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Responsive Web Design Project</title>
+  </head>
+  <body>
+    <common-header></common-header>
+    <section class="page hero">
+      <div id="left-side">
+        <h2>Projenizi Organize Etmek<br />Hiç Bu Kadar Kolay Olmamıştı!</h2>
+        <p>
+          Tablolar, listeler ve kartlarla projelerinizi kolayca yönetin!<br /><br />
+          Yenilikçi board uygulamamız sayesinde işbirliği yapmak, görevleri
+          organize etmek ve projelerinizi takip etmek artık daha kolay.
+          <br /><br />
+          İş akışınızı düzenlemek için esnek araçlarla donatılmış olan
+          uygulamamız, her türlü proje için mükemmel bir çözümdür.<br /><br />
+          Deneyin ve verimliliğinizi artırın!
+        </p>
+        <button
+          class="bg-red text-white"
+          onclick="window.location.assign('./dashboard.html')"
+        >
+          Go to app
+        </button>
+      </div>
+      <div>
+        <img src="./assets/images/calloboration.png" />
+      </div>
+    </section>
+    <common-footer></common-footer>
+  </body>
+</html>

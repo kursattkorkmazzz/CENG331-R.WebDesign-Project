@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --navy-dark:#122147;
+    --orange: #FF881B;
+    --black:#262626;
+    --red: #FF3C3C;
+    --white: #fff;
+
+
+    --header-height: 100px;
+    --footer-height: 60px;
+}
+
+*{
+    font-family: "Inter",sans-serif;
+}
+
+

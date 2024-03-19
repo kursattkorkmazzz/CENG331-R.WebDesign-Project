@@ -1,0 +1,16 @@
+button{
+    border: none;
+    padding: 15px 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: var(--white);
+    font-weight: 300;
+    font-size: 01rem;
+}
+
+button:hover{
+    transition: all;
+    transition-duration: 100ms;
+    transition-timing-function: ease;
+    opacity: 0.8;
+}

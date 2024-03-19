@@ -1,0 +1,19 @@
+
+
+
+footer{
+    color: var(--white);
+    background-color: var(--navy-dark);
+    width: 100%;
+    height: var(--footer-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+
+footer p{
+    font-size: 14px;
+    font-weight: 600;
+}

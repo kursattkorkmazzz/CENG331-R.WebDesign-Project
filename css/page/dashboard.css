@@ -1,0 +1,19 @@
+#create_project_button{
+   
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+#dashboard-page{
+    position: relative;
+    display: flex;
+}
+
+#profile-section{
+    width: 20%;
+}
+
+#project-section{
+width: 80%;
+}
