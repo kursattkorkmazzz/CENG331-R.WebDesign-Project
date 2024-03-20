@@ -4,7 +4,6 @@ class Header extends HTMLElement {
   }
 
   connectedCallback() {
-    console.log("Connected Callback");
     this.innerHTML = `
     <header id="header">
       <div id="banner">

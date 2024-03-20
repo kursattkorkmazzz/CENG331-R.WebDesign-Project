@@ -4,15 +4,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./components/Footer.js" type="text/javascript" defer></script>
     <script src="./components/Header.js" type="text/javascript" defer></script>
+    <script
+      src="./components/ProjectCard.js"
+      type="text/javascript"
+      defer
+    ></script>
     <link rel="stylesheet" href="./css/index.css" />
+
     <title>Responsive Web Design Project</title>
   </head>
   <body>
     <common-header></common-header>
     <section id="dashboard-page" class="page">
-      <div id="profile-section">Profile Section</div>
-      <div id="project-section">Projects Section</div>
-
+      <div id="profile-section">
+        <img id="avatar-img" src="./assets/images/avatar.png" />
+        <p id="username">Username</p>
+        <p id="role"><< Role >></p>
+      </div>
+      <div id="project-section" class="h-screen">
+        <h2 id="project_section-header">Projects</h2>
+        <div id="project-list">
+          <project-card></project-card>
+          <project-card></project-card>
+          <project-card></project-card>
+        </div>
+      </div>
       <button id="create_project_button" class="bg-orange text-white">
         Create New Project
       </button>

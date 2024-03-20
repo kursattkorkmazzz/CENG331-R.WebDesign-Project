@@ -4,7 +4,6 @@ class Footer extends HTMLElement {
   }
 
   connectedCallback() {
-    console.log("Connected Callback");
     this.innerHTML = `
       <footer>
       <p>2024 © ❤️ ile yapıldı.</p>

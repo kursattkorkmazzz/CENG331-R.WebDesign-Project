@@ -1,48 +1,52 @@
 @import url("./components/header.css");
 @import url("./components/footer.css");
 @import url("./components/button.css");
+@import url("./components/projectcard.css");
 @import url("./page/dashboard.css");
 @import url("./variables.css");
 @import url("./styles.css");
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    user-select: none;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
 }
 
-:root{
-    position: relative;
+:root {
+  position: relative;
 }
 
-.page{
-    
-    padding: 16px 16px;
-    width: 100%;
-    min-height: calc(100vh - (var(--header-height) + var(--footer-height)));
+.page {
+  padding: 16px 16px;
+  width: 100%;
+  min-height: calc(100vh - (var(--header-height) + var(--footer-height)));
 }
 
-.hero{ 
-    display: flex;
-    flex-direction: row;
+.h-screen {
+  height: calc(100vh - (var(--header-height) + var(--footer-height)));
 }
 
-#left-side{
-    padding: 0px 5rem;
-    width: 50%;
-    gap: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: justify;
+.hero {
+  display: flex;
+  flex-direction: row;
 }
 
-#left-side h2{
-    color: var(--orange);
-    text-shadow: -2px 2px 3px var(--black);
-    text-wrap: nowrap;
-    width: 100%;
-    font-size: 2rem;
+#left-side {
+  padding: 0px 5rem;
+  width: 50%;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+}
+
+#left-side h2 {
+  color: var(--orange);
+  text-shadow: -2px 2px 3px var(--black);
+  text-wrap: nowrap;
+  width: 100%;
+  font-size: 2rem;
 }

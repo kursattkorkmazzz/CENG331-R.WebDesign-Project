@@ -1,20 +1,21 @@
-
-.bg-red{
-    background-color: var(--red);
+.bg-red {
+  background-color: var(--red);
 }
-.bg-orange{
-    background-color: var(--orange);
+.bg-orange {
+  background-color: var(--orange);
 }
-
-
-.text-red{
-    color: var(--red);
+.bg-blue {
+  background-color: var(--blue);
 }
 
-.text-white{
-    color: var(--white);
+.text-red {
+  color: var(--red);
 }
 
-.text-black{
-    color: var(--black);
+.text-white {
+  color: var(--white);
+}
+
+.text-black {
+  color: var(--black);
 }

@@ -1,0 +1,29 @@
+#card-wrapper {
+  width: 600px;
+  border-style: solid;
+  border-width: 0.5px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: -1px 1px 10px var(--black);
+}
+
+#card-thumbnail {
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+#card-thumbnail:hover {
+  scale: 1.05;
+}
+
+#card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+#card-bottom-header {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
