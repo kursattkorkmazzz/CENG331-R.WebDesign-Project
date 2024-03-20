@@ -6,7 +6,7 @@ class Footer extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <footer>
-      <p>2024 © ❤️ ile yapıldı.</p>
+      <p>2024 © made with ❤️.</p>
     </footer>
       `;
   }
