@@ -52,7 +52,6 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  overflow: visible;
 }
 
 #project_section-header {

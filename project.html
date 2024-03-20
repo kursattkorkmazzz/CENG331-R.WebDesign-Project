@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="./components/Header.js" type="text/javascript" defer></script>
+    <script src="./components/Footer.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Responsive Web Design Project</title>
+  </head>
+  <body>
+    <common-header></common-header>
+    <section class="page">
+      <div id="top_bar">
+        <!-- Top Bar -->
+        <button
+          class="bg-blue text-white"
+          onclick="window.location.assign('/dashboard.html')"
+        >
+          Return to Dashboard
+        </button>
+
+        <button class="bg-orange text-white" onclick="alert('Adding new ToDo')">
+          Add New To Do
+        </button>
+      </div>
+      <div id="todo_panel">
+        <!-- Management List -->
+        <div class="todo_list-continer">
+          <h2>To Do</h2>
+          <div class="todo_list todo-red">Todo Lists</div>
+        </div>
+        <div class="todo_list-continer">
+          <h2>In Progress</h2>
+          <div class="todo_list todo-blue">In Progress Lists</div>
+        </div>
+        <div class="todo_list-continer">
+          <h2>In Review</h2>
+          <div class="todo_list todo-orange">In Review Lists</div>
+        </div>
+        <div class="todo_list-continer">
+          <h2>Done</h2>
+          <div class="todo_list todo-green">Done Lists</div>
+        </div>
+      </div>
+    </section>
+    <common-footer></common-footer>
+  </body>
+</html>
