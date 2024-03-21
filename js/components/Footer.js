@@ -1,3 +1,4 @@
+// This class is HTML element and represents our footer element.
 class Footer extends HTMLElement {
   constructor() {
     super();

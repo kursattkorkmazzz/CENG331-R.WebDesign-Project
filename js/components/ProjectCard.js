@@ -11,7 +11,7 @@ class ProjectCard extends HTMLElement {
     />
     <div id="card-bottom">
       <h2 id="card-bottom-header">Project Title</h2>
-      <button class="bg-blue text-white" onclick="window.location.assign('/project.html')">Go to Project</button>
+      <button class="bg-blue text-white" onclick="window.location.assign('./project.html')">Go to Project</button>
     </div>
   </div>
     

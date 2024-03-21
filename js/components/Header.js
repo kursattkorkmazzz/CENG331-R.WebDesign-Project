@@ -1,3 +1,4 @@
+// This class is HTML element and represents our header element.
 class Header extends HTMLElement {
   constructor() {
     super();
@@ -12,14 +13,14 @@ class Header extends HTMLElement {
       <nav id="navbar">
         <ul>
           <li>
-            <a href="/">Homepage</a>
+            <a href="./">Homepage</a>
           </li>
           <li>
-            <a href="/dashboard.html">Go to app</a>
+            <a href="./dashboard.html">Go to app</a>
           </li>
         </ul>
         <li>
-          <a href="/login.html">Login or Register</a>
+          <a href="./login.html">Login or Register</a>
         </li>
       </nav>
     </header>

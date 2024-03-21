@@ -1,31 +1,43 @@
+<!--
+  This is our register page. The user can register using this page and it is ready for creating new project or attendind to existing project.
+-->
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="./js/components/Header.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <script
+      src="./js/components/Footer.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <script
+      src="./js/components/RegisterPanel.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <script src="./js/script/imagePreview.js" defer></script>
 
-  <script src="./js/components/Header.js" type="text/javascript" defer></script>
-  <script src="./js/components/Footer.js" type="text/javascript" defer></script>
-  <script src="./js/components/RegisterPanel.js" type="text/javascript" defer></script>
-  <script src="./js/script/imagePreview.js" defer></script>
-  
-  <link rel="stylesheet" href="./css/index.css" />
-  <link rel="stylesheet" href="./css/components/register.css" />
-  <link rel="stylesheet" href="./css/components/header.css" />
-  <link rel="stylesheet" href="./css/components/footer.css" />
-  <link rel="stylesheet" href="./css/components/button.css" />
-  
-  <title>Responsive Web Design Project</title>
-</head>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/components/register.css" />
+    <link rel="stylesheet" href="./css/components/header.css" />
+    <link rel="stylesheet" href="./css/components/footer.css" />
+    <link rel="stylesheet" href="./css/components/button.css" />
 
-<body>
-  <common-header></common-header>
-  <section class="page ">
-    <register-panel></register-panel>
-  </section>
+    <title>Responsive Web Design Project</title>
+  </head>
 
-  
-  <common-footer></common-footer>
-</body>
+  <body>
+    <common-header></common-header>
+    <section class="page">
+      <register-panel></register-panel>
+    </section>
 
+    <common-footer></common-footer>
+  </body>
 </html>

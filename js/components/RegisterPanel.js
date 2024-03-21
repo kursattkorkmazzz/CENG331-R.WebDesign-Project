@@ -5,7 +5,7 @@ class RegisterPanel extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <div id="register-wrapper" class="bg-black text-white ">
-        <form action="/index.html" method="post">
+        <form action="./index.html" method="post">
           <div class="text-white">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
