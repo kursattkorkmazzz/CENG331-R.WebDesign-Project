@@ -11,6 +11,10 @@
   background-color: var(--green);
 }
 
+.bg-black {
+  background-color: var(--black);
+}
+
 .text-red {
   color: var(--red);
 }
@@ -21,4 +25,8 @@
 
 .text-black {
   color: var(--black);
+}
+
+.text-gray{
+  color: var(--gray-dark);
 }

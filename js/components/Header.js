@@ -19,7 +19,7 @@ class Header extends HTMLElement {
           </li>
         </ul>
         <li>
-          <a href="/auth">Login or Register</a>
+          <a href="/login.html">Login or Register</a>
         </li>
       </nav>
     </header>
