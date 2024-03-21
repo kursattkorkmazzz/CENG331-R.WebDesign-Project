@@ -13,7 +13,7 @@ class LoginPanel extends HTMLElement {
           <div>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
-            <a href="" class="sign-in text-white"> Sign In</a>
+            <a href="/register.html" class="sign-in text-white"> Sign In</a>
           </div>
           <div class="login-div">
             <button type="submit" class="bg-red   text-white login-button">Login</button>
