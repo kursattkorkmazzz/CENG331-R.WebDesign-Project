@@ -4,12 +4,24 @@ var todoList = [
   new TodoCard(1, "To Do 2", "This is a description for To Do 2", "done"),
 ];
 
+$(document).ready(function () {
+  updateUI();
+
+  // Form Handler
+  $("#todo_list-modal_wrapper-addTodo").on("click", function (event) {
+    if (event.target.id === "todo_list-modal_wrapper-addTodo") {
+      $(this).hide();
+    }
+  });
+
+  $("#todo_list-add_form").on("submit", addNewToDo);
+});
+
 // CONTROLLER
 
 /**
  * Updates UI according to UI.
  */
-
 function updateUI() {
   todoListElement = document.getElementById("todo-list");
   inprogressListElement = document.getElementById("inprogress-list");
@@ -57,8 +69,21 @@ function updateUI() {
 /**
  * Adds new todo
  */
-function addNewToDo() {
-  alert("New todo added!");
+function addNewToDo(ev) {
+  ev.preventDefault();
+
+  const todoName = $("#todo_list-add_form input[name='todoName']").val();
+  const todoDescription = $(
+    "#todo_list-add_form input[name='todoDescription']"
+  ).val();
+  const status = $("#todo_list-add_form select[name='status']").val();
+
+  let newId = generateNewId();
+  let newTodo = new TodoCard(newId, todoName, todoDescription, status);
+  todoList.push(newTodo);
+
+  toggleForm();
+  updateUI();
 }
 
 function updateStatusOfTodo(id, newStatus) {
@@ -98,4 +123,23 @@ function drop(ev) {
 }
 function allowDrop(ev) {
   ev.preventDefault();
+}
+
+// Toggles the form for adding a new todo card
+function toggleForm() {
+  if ($("#todo_list-modal_wrapper-addTodo").is(":hidden")) {
+    $("#todo_list-modal_wrapper-addTodo").show();
+  } else {
+    $("#todo_list-modal_wrapper-addTodo").hide();
+  }
+}
+
+// UTILS
+// Generates a new id for a new todo
+function generateNewId() {
+  let generatedId = 0;
+  while (todoList.some((todo) => todo._id === generatedId)) {
+    generatedId++;
+  }
+  return generatedId;
 }

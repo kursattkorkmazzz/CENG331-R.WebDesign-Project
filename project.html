@@ -7,6 +7,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <script src="./js/jquery/jquery.js" type="text/javascript" defer></script>
+
     <script
       src="./js/components/Header.js"
       type="text/javascript"
@@ -41,11 +43,39 @@
           Return to Dashboard
         </button>
 
-        <button class="bg-orange text-white" onclick="updateUI()">
+        <button class="bg-orange text-white" onclick="toggleForm()">
           Add New To Do
         </button>
       </div>
       <div id="todo_panel">
+        <!-- Add New Todo Form -->
+        <div
+          id="todo_list-modal_wrapper-addTodo"
+          class="todo_list-modal-wrapper"
+        >
+          <form id="todo_list-add_form">
+            <label for="todoName">Task Name:</label>
+            <input type="text" id="todoName" name="todoName" required />
+
+            <label for="todoName">Task Description:</label>
+            <input
+              type="text"
+              id="todoDescription"
+              name="todoDescription"
+              required
+            />
+
+            <label for="projectImage">Status:</label>
+            <select id="status" name="status" required>
+              <option value="todo">To Do</option>
+              <option value="inprogress">In Progress</option>
+              <option value="inreview">In Review</option>
+              <option value="done">Done</option>
+            </select>
+            <button type="submit">Add New Todo</button>
+          </form>
+        </div>
+
         <!-- Management List -->
         <div class="todo_list-continer">
           <h2>To Do</h2>
