@@ -31,6 +31,7 @@ class GetContactForm extends HTMLElement {
     this.querySelector('#get-contact-form').addEventListener('submit', (event) => {
         event.preventDefault();
         alert('Form submitted successfully');
+        location.reload();
       });
   } 
 }
