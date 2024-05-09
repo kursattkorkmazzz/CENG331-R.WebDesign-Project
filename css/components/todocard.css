@@ -1,0 +1,19 @@
+#todo-card-wrapper {
+  background-color: rgba(187, 187, 187, 0.676);
+  border-radius: 8px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+#todo-card-wrapper h1 {
+  font-size: 14px;
+}
+
+#todo-card-wrapper p {
+  margin-top: 10px;
+  font-size: 12px;
+
+  overflow: hidden;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+}

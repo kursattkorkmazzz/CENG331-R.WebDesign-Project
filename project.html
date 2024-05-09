@@ -17,6 +17,15 @@
       type="text/javascript"
       defer
     ></script>
+    <script
+      src="./js/components/TodoCard.js"
+      type="text/javascript"
+      defer
+    ></script>
+
+    <script src="./js/script/project.js" type="text/javascript" defer></script>
+
+    <link rel="stylesheet" href="./css/components/todocard.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <title>Responsive Web Design Project</title>
   </head>
@@ -32,7 +41,7 @@
           Return to Dashboard
         </button>
 
-        <button class="bg-orange text-white" onclick="alert('Adding new ToDo')">
+        <button class="bg-orange text-white" onclick="updateUI()">
           Add New To Do
         </button>
       </div>
@@ -40,19 +49,74 @@
         <!-- Management List -->
         <div class="todo_list-continer">
           <h2>To Do</h2>
-          <div class="todo_list todo-red">Todo Lists</div>
+          <div class="todo_list todo-red">
+            Todo Lists
+            <div id="todo-list" class="todo_list-list">
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+            </div>
+          </div>
         </div>
         <div class="todo_list-continer">
           <h2>In Progress</h2>
-          <div class="todo_list todo-blue">In Progress Lists</div>
+          <div class="todo_list todo-blue">
+            In Progress Lists
+
+            <div id="inprogress-list" class="todo_list-list">
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+            </div>
+          </div>
         </div>
         <div class="todo_list-continer">
           <h2>In Review</h2>
-          <div class="todo_list todo-orange">In Review Lists</div>
+          <div class="todo_list todo-orange">
+            In Review Lists
+
+            <div id="inreview-list" class="todo_list-list">
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+            </div>
+          </div>
         </div>
         <div class="todo_list-continer">
           <h2>Done</h2>
-          <div class="todo_list todo-green">Done Lists</div>
+          <div class="todo_list todo-green">
+            Done Lists
+
+            <div id="done-list" class="todo_list-list">
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+              <todo-card></todo-card>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: space-between;
 }
+
 #todo_panel {
   margin-top: 2rem;
   display: flex;
@@ -54,4 +55,11 @@
   border-color: var(--green);
   background-color: #b1ffcc;
   color: white;
+}
+
+.todo_list-list {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
