@@ -6,7 +6,10 @@ var todoList = [
 
 $(document).ready(function () {
   updateUI();
+  toggleForm();
 
+  // Plugin activation
+  $("#status").selectric();
   // Form Handler
   $("#todo_list-modal_wrapper-addTodo").on("click", function (event) {
     if (event.target.id === "todo_list-modal_wrapper-addTodo") {
