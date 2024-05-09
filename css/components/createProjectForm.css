@@ -3,19 +3,29 @@
     display: none;
     position: absolute;
     width: 100%;
-    height: auto;
-    height: 80vh;
+    height: 84vh;
     background: rgba(0, 0, 0, 0.5); /* black background with 50% opacity */
     color: white; /* text color */
 }
 
 form{
     display: flex;
+    padding: 20px;
+    border-radius: 10px;
     flex-direction: column;
     width: 20%;
     margin: 20vh auto;
+    background-color: var(--navy-dark);
 }
 
 form > input {
+    margin-top: 10px;
     margin-bottom: 50px;
 }
+
+.image-preview{
+    display: block;
+    max-height: 30vh;
+    margin: 10px auto;
+    max-width: 100%;
+  }
