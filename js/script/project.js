@@ -61,4 +61,41 @@ function addNewToDo() {
   alert("New todo added!");
 }
 
-function updateStatusOfTodo(id, newStatus) {}
+function updateStatusOfTodo(id, newStatus) {
+  todoList.forEach((todo) => {
+    if (todo._id == id) {
+      todo.status = newStatus;
+    }
+  });
+
+  updateUI();
+}
+
+// Drag and Drop
+
+function drag(ev, id) {
+  ev.dataTransfer.setData("drag-todo_id", id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var id = ev.dataTransfer.getData("drag-todo_id");
+
+  switch (ev.target.id) {
+    case "todo-list":
+      updateStatusOfTodo(id, "todo");
+      break;
+    case "inprogress-list":
+      updateStatusOfTodo(id, "inprogress");
+      break;
+    case "inreview-list":
+      updateStatusOfTodo(id, "inreview");
+      break;
+    case "done-list":
+      updateStatusOfTodo(id, "done");
+      break;
+  }
+}
+function allowDrop(ev) {
+  ev.preventDefault();
+}

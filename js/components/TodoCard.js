@@ -8,13 +8,15 @@ class TodoCard extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
-    <div id="todo-card-wrapper" draggable="true">
+    <div class="todo-card-wrapper" draggable="true" ondragstart="drag(event,${
+      this._id
+    })">
     <h1>${this.todoName ?? "Todo Name"}</h1>
     <p>
     ${this.description ?? "Todo Description"}
     </p>
-    <p style="display:none;">${this.status ?? "todo"}</p>
-    <p style="display:none;">${this._id ?? "null"}</p>
+    <p class="status" style="display:none;">${this.status ?? "todo"}</p>
+    <p class="id" style="display:none;">${this._id ?? "null"}</p>
   </div>
     
     `;
