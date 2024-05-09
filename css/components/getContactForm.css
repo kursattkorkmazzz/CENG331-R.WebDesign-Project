@@ -1,0 +1,31 @@
+#contact-form {
+    display: flex;
+    padding: 30px 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 500px;
+    margin: 5% auto;
+    border-radius: 15px;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+#user-infos {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}

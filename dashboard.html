@@ -6,6 +6,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Components-->
     <script
       src="./js/components/Footer.js"
       type="text/javascript"
@@ -21,12 +22,20 @@
       type="text/javascript"
       defer
     ></script>
+    <script
+      src="./js/components/CreateProject.js"
+      type="text/javascript"
+      defer
+    ></script>
     <link rel="stylesheet" href="./css/index.css" />
-
+    <link rel="stylesheet" href="./css/components/createProject.css">
     <title>Responsive Web Design Project</title>
   </head>
   <body>
     <common-header></common-header>
+    <div id="create-project-form"  class="create-project-form-container" >
+      <create-project-form></create-project-form>
+    </div>
     <section id="dashboard-page" class="page">
       <div id="profile-section">
         <img id="avatar-img" src="./assets/images/avatar.png" />
@@ -46,5 +55,6 @@
       </button>
     </section>
     <common-footer></common-footer>
+    <script src="./js/script/createNewProject.js" type="text/javascript"></script>
   </body>
 </html>

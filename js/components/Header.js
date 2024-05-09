@@ -18,6 +18,9 @@ class Header extends HTMLElement {
           <li>
             <a href="./dashboard.html">Go to app</a>
           </li>
+          <li>
+            <a href="./contact.html">Contact Us</a>
+          </li>
         </ul>
         <li>
           <a href="./login.html">Login or Register</a>
