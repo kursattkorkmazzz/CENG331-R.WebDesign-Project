@@ -109,7 +109,7 @@ function drop(ev) {
   ev.preventDefault();
   var id = ev.dataTransfer.getData("drag-todo_id");
 
-  switch (ev.target.id) {
+  switch (ev.currentTarget.id) {
     case "todo-list":
       updateStatusOfTodo(id, "todo");
       break;
