@@ -1,0 +1,74 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "project_id": "0",
+      "name": "Design Wireframes",
+      "description": "Create wireframes for the website layout",
+      "status": "done"
+    },
+    {
+      "id": "2",
+      "project_id": "0",
+      "name": "Develop Frontend",
+      "description": "Implement the user interface using HTML, CSS, and JavaScript",
+      "status": "inreview"
+    },
+    {
+      "id": "3",
+      "project_id": "0",
+      "name": "Implement Backend",
+      "description": "Build the server-side logic and database integration",
+      "status": "inprogress"
+    },
+    {
+      "id": "4",
+      "project_id": "0",
+      "name": "Integrate Payment Gateway",
+      "description": "Add payment processing functionality to the website",
+      "status": "todo"
+    },
+    {
+      "id": "5",
+      "project_id": "0",
+      "name": "Perform Testing",
+      "description": "Test the website for bugs and ensure functionality",
+      "status": "todo"
+    },
+    {
+      "id": "6",
+      "project_id": "1",
+      "name": "Gather Requirements",
+      "description": "Meet with the client to discuss project needs and goals",
+      "status": "done"
+    },
+    {
+      "id": "7",
+      "project_id": "1",
+      "name": "Create Proposal",
+      "description": "Develop a project proposal outlining scope, timeline, and cost",
+      "status": "done"
+    },
+    {
+      "id": "8",
+      "project_id": "1",
+      "name": "Design Mockups",
+      "description": "Create visual mockups of the website design",
+      "status": "done"
+    },
+    {
+      "id": "9",
+      "project_id": "1",
+      "name": "Develop Website",
+      "description": "Build the website using the approved design and functionality",
+      "status": "inprogress"
+    },
+    {
+      "id": "10",
+      "project_id": "1",
+      "name": "Perform Testing",
+      "description": "Test the website for bugs and ensure functionality",
+      "status": "todo"
+    }
+  ]
+}

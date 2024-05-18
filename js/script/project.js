@@ -1,8 +1,5 @@
 // MODEL
-var todoList = [
-  new TodoCard(0, "To Do 1", "This is a description for To Do 1", "todo"),
-  new TodoCard(1, "To Do 2", "This is a description for To Do 2", "done"),
-];
+var todoList = [];
 
 $(document).ready(function () {
   updateUI();
@@ -44,6 +41,16 @@ function updateUI() {
     doneListElement.innerHTML = "";
   }
 
+  if (todoList.length === 0) {
+    let params = new URLSearchParams(window.location.search);
+
+    mockTaskLoader(todoList, params.get("id"), todoListPlacer);
+    return;
+  }
+  todoListPlacer();
+}
+
+function todoListPlacer() {
   todoList.forEach((todo) => {
     switch (todo.status) {
       case "todo":
@@ -69,7 +76,6 @@ function updateUI() {
     }
   });
 }
-
 /**
  * Adds new todo
  */
