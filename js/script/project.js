@@ -43,6 +43,7 @@ function updateUI() {
   if (doneListElement) {
     doneListElement.innerHTML = "";
   }
+
   todoList.forEach((todo) => {
     switch (todo.status) {
       case "todo":

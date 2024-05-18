@@ -1,0 +1,15 @@
+{
+  "projects": [
+    {
+      "id": "0",
+      "name": "E-Commerce Website",
+      "image": "https://www.impactplus.com/hubfs/customized-ecommerce.jpg"
+    },
+    {
+      "id": "1",
+      "name": "Mobile App",
+
+      "image": "https://www.apptunix.com/blog/wp-content/uploads/sites/3/2019/10/mobile-apps-in-business-copy-5.jpg"
+    }
+  ]
+}

@@ -51,3 +51,28 @@
   width: 100%;
   font-size: 2rem;
 }
+
+
+
+#ip_address_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 15px;
+  padding: 15px 15px;
+  opacity: 0.6;
+}
+
+#ip_address_section div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+#ip_address_section div h1 {
+  font-size: 12px;
+}
+
+#ip_address_section div p {
+  font-size: 11px;
+}
