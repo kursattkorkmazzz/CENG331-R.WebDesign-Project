@@ -22,9 +22,11 @@ class Header extends HTMLElement {
             <a href="./contact.html">Contact Us</a>
           </li>
         </ul>
+        <!--
         <li>
           <a href="./login.html">Login or Register</a>
         </li>
+        -->
       </nav>
     </header>
     `;

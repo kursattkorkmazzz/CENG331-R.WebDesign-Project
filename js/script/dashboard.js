@@ -2,6 +2,9 @@ const PROJECT_LIST = [];
 
 $(document).ready(function () {
   updateUI();
+
+  mockUserLoader();
+
   $("#create_project_button").on("click", function () {
     $("#create-project-form").css("display", "block");
   });
@@ -58,7 +61,12 @@ function createProject(event) {
   if (file) {
     // create a URL representing the file
     var url = URL.createObjectURL(file);
-    let card = new ProjectCard(formData.get("projectName"), url);
+    let id = 0;
+    while (PROJECT_LIST.find((project) => project.id === id)) {
+      id++;
+    }
+
+    let card = new ProjectCard(id, formData.get("projectName"), url);
     // log the URL to the console
     PROJECT_LIST.push(card);
 

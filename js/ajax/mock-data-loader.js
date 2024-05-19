@@ -1,5 +1,6 @@
 const MOCK_PROJECT_URL = "../../mock/project.json";
 const MOCK_TASK_URL = "../../mock/task.json";
+const MOCK_USER_URL = "https://randomuser.me/api/";
 
 // Mock project loader if there is no exist a real project.
 function mockProjectLoader(projectList) {
@@ -29,5 +30,19 @@ function mockTaskLoader(todoList, project_id, callback) {
     if (callback) {
       callback();
     }
+  });
+}
+
+function mockUserLoader() {
+  $.ajax({
+    url: MOCK_USER_URL,
+    dataType: "json",
+    success: function (data) {
+      $("#avatar-img").attr("src", data.results[0].picture.large);
+      $("#username").text(
+        data.results[0].name.first + " " + data.results[0].name.last
+      );
+      $("#email").text(`<< ${data.results[0].email} >>`);
+    },
   });
 }
